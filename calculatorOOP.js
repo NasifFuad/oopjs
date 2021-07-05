@@ -26,6 +26,7 @@ const Calculator = function(numberOne,numberTwo){
   
 }
 
-const newNumber = new Calculator(11,11)
 
-newNumber.multiplication()
+
+export default Calculator;
+

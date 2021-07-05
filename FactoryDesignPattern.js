@@ -1,4 +1,4 @@
-const rectangleFactory = function (width,height){
+const FactoryPatternClass = function (width,height){
   return {
     width:width,
     height:height,
@@ -7,4 +7,5 @@ const rectangleFactory = function (width,height){
     }
   }
 }
-const factoryPattern = new rectangleFactory(1,3)
+
+export default FactoryPatternClass

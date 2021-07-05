@@ -1,19 +1,11 @@
 // Import stylesheets
 import './style.css';
 import axios from "axios"
-import newRect from "./constructorDesignPattern.js"
+import FactoryPatternClass from "./FactoryDesignPattern.js"
+import ConstructorPatternClass from "./constructorDesignPattern.js"
 
-const fakeJson = function(routePath){
-  this.api = "https://jsonplaceholder.typicode.com"
-  this.fetch = function(routePath){
-    !routePath ? this.routePath = "users" : this.routePath = routePath
-    axios.get(`${this.api}/${this.routePath}`)
-      .then(response =>{
-        console.log(response.data)
-      })
-  }
-}
 
-const callAPI = new fakeJson()
+const factoryPatternDemo = new FactoryPatternClass(1,3)
 
-callAPI.fetch()
+const constructorPatternDemo = new ConstructorPatternClass(1,3)
+

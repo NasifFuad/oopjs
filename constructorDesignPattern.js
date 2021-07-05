@@ -1,5 +1,5 @@
 //Constructor Design Pattern
-const rectangle = function(width,height) {
+const ConstructorPatternClass = function(width,height) {
   this.width = width;
   this.height = height;
 
@@ -12,7 +12,7 @@ const rectangle = function(width,height) {
   }
 }
 
-const newRect = new rectangle(1,3)
+
 //End of Constructor pattern 
 
-export default newRect;
+export default ConstructorPatternClass;
